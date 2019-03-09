@@ -11,11 +11,11 @@ from exercises.exercise4 import Exercise4Steps
 import listeners.csv_listener
 
 
-class LFTaskSet(TaskSet):
+class ALTTaskSet(TaskSet):
     tasks = [MainPageSteps, Exercise1Steps, Exercise2Steps, Exercise3Steps, Exercise4Steps]
 
 
-class LocustFile(HttpLocust):
-    task_set = LFTaskSet
+class AntycaptchaLoadTest(HttpLocust):
+    task_set = ALTTaskSet
     min_wait = 4000
     max_wait = 4000
