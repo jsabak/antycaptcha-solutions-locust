@@ -106,3 +106,6 @@ venv.bak/
 # locust
 *.har
 *.csv
+
+# Pycharm
+.idea/
